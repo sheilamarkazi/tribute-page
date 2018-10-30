@@ -1,13 +1,70 @@
 <!DOCTYPE html>
 <html>
+
+<link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Lobster Two">
+<link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Open Sans">
 <style>
+
+
+.silver-background{
+	background-color: silver;
+	padding-top: .05px;
+    padding-right: float;
+    padding-bottom: .05px;
+    padding-left: float;
+	margin:25px;
+	text-align: center;
+}
+h1 {
+	font-family: "Lobster Two";
+	font-size: 45px;
+}
+
 	img {
   max-width: 100%;
   display: block;
   height: auto;
   margin:auto;
 }
+
+  .silver-border {
+    border-color: silver;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 5px;
+  }
+
 	div {position: relative;}
+
+.dark-text {
+    color: hsl(0, 100%, 20%);
+}
+
+ p {
+    	font-size:16px;
+    	font-family: "Open Sans";
+    }
+
+ ul {
+    	font-size:16px;
+    	font-family: "Open Sans";
+    }
+
+#img-caption {
+	font-size:14px;
+	text-align: center;
+  }
+
+.space{
+	margin: 40px 20px 40px 20px;
+}
+
+.closed-in{
+	margin: 40px 90px 40px 90px;
+}
+
 </style>
 <head>
 	<title>Yvonne Brill Tribute Page</title>
@@ -15,17 +72,23 @@
 <main id="main">
 <body>
 
-	<h1 id="title">Yvonne Brill</h1>
+<div class="silver-background">
+	<h1 id="title" class="dark-text">Yvonne Brill</h1>
+</div>
 
 <div id="img-div">
-	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuSeHADzc9HPCuLqtAp51UJd5SqzIqWyBS1m8y5lvKbqdFXpORu3myX6E" id="image" alt="Black and white photo of Yvonne Brill">
-	<p id="img-caption">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuSeHADzc9HPCuLqtAp51UJd5SqzIqWyBS1m8y5lvKbqdFXpORu3myX6E" id="image" alt="Black and white photo of Yvonne Brill" class="silver-border">
+	
+	<p id="img-caption" class="dark-text">
 		Brilliant rocket scientist, mother, and wife.
 	</p>
+
 </div>
-<p>
+
+<div class="closed-in">
+<p class="dark-text">
 	<!-- write stuff about her here -->
-	<ul id="tribute-info">
+	<ul id="tribute-info" class="dark-text">
 		<li>Born in Winnepeg, Manitoba, Canada on December 30, 1924 to Belgian immigrants</li>
 		<li>Studied chemistry and mathematics at the University of Manitoba, unable to study engineering due to her gender
 		</li>
@@ -38,15 +101,17 @@
 		<li>Received an award for successfully returning to her career after taking 8 years off for her 3 children.</li>
 		<li>Elected to the National Academy of Engineering</li>
 		<li>Received the National Medal of Technology and Innovation from Barack Obama</li>
-		
-
-
-
+		</ul>
 </p>
+</div>
 
-<p>
+
+<div class="space">
+<p class="dark-text">
 Brill passed away on March 27, 2013, after complications due to breast cancer. The obituary the <i>New York Times</i> was originally to publish began "She made a mean beef stroganoff, followed her husband from job to job and took eight years off from work to raise three children." This was heavily criticized as an overemphasis on family life and a diminishment of her scientific career. Ultimately, the <i>Times</i> changed the introduction of the obituary by removing the reference to her cooking. You can view the official obituary <a id="tribute-link" target="_blank" href="https://www.nytimes.com/2013/03/31/science/space/yvonne-brill-rocket-scientist-dies-at-88.html">here</a>.
 </p>
+</div>
+
 </body>
 </main>
 </html>
